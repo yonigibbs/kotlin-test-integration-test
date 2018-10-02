@@ -17,6 +17,7 @@ The *integration* tests are in a file called [IntegrationTest.kt](/src/integrati
 There are two classes in this file:
 * `IntegrationTest`: uses a standard JUnit `@Test` annotation to define a unit test method.
 * `KotlinTestIntegrationTest`: subclass of the kotlin-test `StringSpec` class.
+
 The standard JUnit class successfully causes the test task to fail if the relevant code is uncommented.
 The `StringSpec` implementation does not cause the test to fail, as it should.
 
