@@ -10,7 +10,7 @@ class IntegrationTest {
         // Succeed
         Assert.assertEquals("aa", ThingToBeTested().duplicate("a"))
 
-        // Fail on purpose: uncommenting this successfully causes the test to fail.
+        // Fail on purpose: uncommenting this causes the test to fail.
         // Assert.assertEquals("fail on purpose", ThingToBeTested().duplicate("a"))
     }
 }
@@ -22,7 +22,7 @@ class KotlinTestIntegrationTest : StringSpec({
     }
 
     "test that fails" {
-        // *** THE BELOW DOES _NOT_ CAUSE THE TEST TO FAIL, AS IT SHOULD
-        Assert.assertEquals("fail on purpose", ThingToBeTested().duplicate("a"))
+        // Fail on purpose: uncommenting this causes the test to fail.
+        // Assert.assertEquals("fail on purpose", ThingToBeTested().duplicate("a"))
     }
 })

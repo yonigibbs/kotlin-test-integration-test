@@ -10,8 +10,8 @@ class UnitTest {
         // Succeed
         Assert.assertEquals("aa", ThingToBeTested().duplicate("a"))
 
-        // Fail on purpose: uncommenting this successfully causes the test to fail.
-        //Assert.assertEquals("fail on purpose", ThingToBeTested().duplicate("a"))
+        // Fail on purpose: uncommenting this causes the test to fail.
+        // Assert.assertEquals("fail on purpose", ThingToBeTested().duplicate("a"))
     }
 }
 
@@ -22,7 +22,7 @@ class KotlinTestUnitTest : StringSpec({
     }
 
     "test that fails" {
-        // Fail on purpose: uncommenting this successfully causes the test to fail.
+        // Fail on purpose: uncommenting this causes the test to fail.
         // Assert.assertEquals("fail on purpose", ThingToBeTested().duplicate("a"))
     }
 })
